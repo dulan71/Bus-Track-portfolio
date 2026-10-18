@@ -1868,6 +1868,35 @@ a.resource-row:hover, .resource-group summary:hover { background: rgba(181, 140,
 .resource-sublist { background: #131017; padding-left: 28px; }
 .resource-sublist .resource-row { border-top: 1px solid var(--line); border-bottom: 0; }
 
+/* compact checklist items */
+.resource-list > .resource-group:first-child .resource-sublist {
+  padding-left: 14px;
+}
+.resource-list > .resource-group:first-child .resource-sublist .resource-row {
+  grid-template-columns: 1fr auto 16px;
+  gap: 10px;
+  padding: 9px 10px;
+}
+.resource-list > .resource-group:first-child .resource-sublist .resource-row strong {
+  font-size: 13px;
+}
+.resource-list > .resource-group:first-child .resource-sublist .resource-row small {
+  margin-top: 2px;
+  font-size: 11px;
+}
+.resource-list > .resource-group:first-child .resource-sublist .resource-row b {
+  padding: 4px 8px;
+  color: var(--purple-text);
+  border-color: rgba(181, 140, 255, .35);
+  background: rgba(181, 140, 255, .12);
+  font-size: 9px;
+  letter-spacing: .04em;
+}
+.resource-list > .resource-group:first-child .resource-sublist .resource-row > span:last-child {
+  color: #cfc9da;
+  font-size: 14px;
+}
+
 /* technology pills: true brand colours, no inversion */
 .tech-tags img { filter: none; opacity: 1; }
 .tech-tags span { font-size: 15px; color: #efe8f8; }

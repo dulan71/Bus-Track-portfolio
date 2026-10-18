@@ -71,4 +71,31 @@
       if (label) label.textContent = 'Message ready to send';
     });
   }
+
+  /* ── Research library downloads ── */
+  var fullThesis = Array.prototype.find.call(
+    document.querySelectorAll('.resource-row'),
+    function (row) {
+      var title = row.querySelector('strong');
+      return title && title.textContent.trim() === 'Full thesis';
+    }
+  );
+  if (fullThesis) {
+    fullThesis.href = 'assets/documents/Group%20Thesis/R26-ISE-004_DRAFT.pdf';
+    fullThesis.target = '_blank';
+    fullThesis.rel = 'noreferrer';
+    fullThesis.setAttribute('download', '');
+  }
+
+  var checklistGroup = Array.prototype.find.call(
+    document.querySelectorAll('.resource-group'),
+    function (group) {
+      var title = group.querySelector('summary strong');
+      return title && title.textContent.trim() === 'Check Lists';
+    }
+  );
+  if (checklistGroup) {
+    var checklistCount = checklistGroup.querySelector('summary b');
+    if (checklistCount) checklistCount.textContent = '04 PDF';
+  }
 })();
