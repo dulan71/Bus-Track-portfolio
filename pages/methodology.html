@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransitIQ | Smart Bus Research Portfolio</title>
+  <meta name="description" content="IoT-enabled smart bus route monitoring and revenue management system research portfolio.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="white" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/icons/icon-light-32x32.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../assets/icons/icon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <noscript><style>.fade-in-section{opacity:1;transform:none}</style></noscript>
+</head>
+<body class="antialiased">
+<main class="site-shell methodology-page">
+    <header class="topbar">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dot" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="1"/></svg></span>
+        <span>Transit<span class="brand-accent">IQ</span></span>
+      </a>
+      <a class="nav-cta" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> Back home</a>
+    </header>
+    <section id="research" class="dark-section section-pad methodology-hero">
+      <div class="research-hero-grid">
+        <div class="section-intro light">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> The research</div>
+          <h1>Understanding the problem.<br><em>Designing the intervention.</em></h1>
+          <div class="research-copy-grid">
+            <p class="research-lead">TransitIQ is an applied design-science research project focused on improving the <strong>reliability and efficiency</strong> of Sri Lanka's public bus services.</p>
+            <p>We investigate how <mark>IoT data</mark>, operational policy, and revenue intelligence can work together in one practical transport management system.</p>
+            <p>The research begins with the lived operational problem: buses may be unavailable during <mark>off-peak hours</mark>, fixed permit payments can hide potential government income, and vehicles may deviate from permitted routes.</p>
+            <p>Our proposed solution installs GPS and motion-sensing devices in buses to capture location, trip events, speed, and route compliance. A secure cloud platform processes these events, applies geofencing and scheduling rules, and presents actionable information through dashboards and mobile tools.</p>
+          </div>
+          <div class="research-hero-tags"><span>Problem-led research</span><span>IoT transport system</span><span>Revenue intelligence</span></div>
+        </div>
+        <figure class="research-hero-visual">
+          <img src="../assets/images/smart-bus-hero.png" alt="Modern city bus representing the public transport system studied by TransitIQ.">
+          <div class="research-visual-overlay"><span>Field context</span><strong>Sri Lanka public transport</strong></div>
+        </figure>
+      </div>
+
+      <div class="methodology-objectives">
+        <div>
+          <div class="eyebrow light"><span class="eyebrow-dot"></span> Research problem</div>
+          <div class="problem-list">
+            <div><b>01</b><span>Public transportation is often unavailable or unreliable during off-peak hours, limiting access for passengers and reducing service continuity.</span></div>
+            <div><b>02</b><span>Fixed permit payment systems do not reflect actual operational distance, causing the government to lose potential revenue.</span></div>
+            <div><b>03</b><span>Buses can deviate from permitted routes without consistent real-time monitoring, weakening policy enforcement and passenger trust.</span></div>
+          </div>
+        </div>
+        <div class="methodology-note"><span>Research question</span><p>How can a single stream of verified IoT telemetry be used to verify route compliance, schedule and reallocate bus trips, calculate distance-based permit fees and off-peak incentives, and give drivers real-time safety feedback in private bus transit in Sri Lanka?</p></div>
+      </div>
+
+      <div class="architecture-block">
+        <div class="architecture-copy">
+          <div class="eyebrow light"><span class="eyebrow-dot"></span> Proposed solution</div>
+          <h2>One connected system<br><em>for better decisions.</em></h2>
+          <p>GPS and motion-sensing devices installed in buses capture location, speed, trip events, and route compliance. Secure events move through MQTT/HTTPS to a cloud platform, where the backend validates data, applies geofencing and scheduling policies, and stores operational records.</p>
+          <p>The authority web portal turns these records into monitoring dashboards, alerts, and revenue reports. Mobile tools keep bus owners and drivers informed about service performance, income, and expenses.</p>
+        </div>
+        <figure>
+          <img src="../assets/images/system-architecture.jpeg" alt="System architecture showing IoT bus devices connected through Azure IoT Hub to a Spring backend and PostgreSQL database, with web and mobile clients.">
+          <figcaption>IoT devices, cloud processing, secure APIs, database services, and user applications form one connected transport workflow.</figcaption>
+        </figure>
+      </div>
+
+      <div class="methodology-pipeline-section fade-in-section">
+        <div class="pipeline-header">
+          <div class="eyebrow light"><span class="eyebrow-dot"></span> Methodology</div>
+          <h2>A structured pipeline<br><em>from sensor to decision.</em></h2>
+          <p class="pipeline-lead">Our system follows a structured pipeline that combines IoT-based vehicle sensing, event-driven monitoring, policy-driven scheduling, and distance-based revenue calculation to manage bus operations efficiently and fairly.</p>
+        </div>
+        <div class="pipeline-grid">
+          <article class="pipeline-card fade-in-section">
+            <div class="pipeline-card-header">
+              <span class="pipeline-number">01</span>
+              <h3>Distance-Based Revenue Management</h3>
+              <p>Collect GPS telemetry, verify operated distance against assigned routes, apply permit charging policies, and automatically credit operators running low-demand night services.</p>
+            </div>
+            <div class="pipeline-steps">
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin step-icon" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Data Collection</strong>
+                  <p>Collect GPS telemetry from onboard IoT devices as the source of operated distance.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route step-icon" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Distance Verification</strong>
+                  <p>Calculate the actual distance traveled on each trip and verify it against the assigned route.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator step-icon" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Charge Calculation</strong>
+                  <p>Apply permit charging policies to the verified distance to calculate the permit charge for each operator.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift step-icon" aria-hidden="true"><path d="M12 7v14"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/><rect x="3" y="7" width="18" height="4" rx="1"/></svg></div>
+                </div>
+                <div class="step-content">
+                  <strong>Incentive Credits</strong>
+                  <p>Automatically apply incentive credits to operators running low-demand night services.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="pipeline-card fade-in-section">
+            <div class="pipeline-card-header">
+              <span class="pipeline-number">02</span>
+              <h3>Policy-Driven Bus Scheduling and Time-Slot Management</h3>
+              <p>Define time-slot rules and fairness policies, generate balanced monthly schedules, handle disruption requests, and reallocate trips to eligible buses based on workload and constraints.</p>
+            </div>
+            <div class="pipeline-steps">
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings step-icon" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Policy Configuration</strong>
+                  <p>Define time-slot rules (Peak, Normal, Off-Peak, Night) and fairness policies.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days step-icon" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Monthly Base Scheduling</strong>
+                  <p>Allocate planned trips to eligible buses with the lowest assigned workload to generate a fair monthly schedule.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone step-icon" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Disruption Request</strong>
+                  <p>The bus owner submits a request through the mobile app, and the authority web portal reviews and accepts or rejects it.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw step-icon" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></div>
+                </div>
+                <div class="step-content">
+                  <strong>Reallocation</strong>
+                  <p>On acceptance, mark the bus unavailable, filter candidate buses by availability, conflicts, route compatibility, and turnaround constraints, then rank them by daily workload and recent reallocations.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="pipeline-card fade-in-section">
+            <div class="pipeline-card-header">
+              <span class="pipeline-number">03</span>
+              <h3>Event-Driven Bus Monitoring</h3>
+              <p>Stream real-time GPS telemetry from ESP32 devices to Azure IoT Hub, match each position to the assigned route, detect deviations, and log events for monitoring and reporting.</p>
+            </div>
+            <div class="pipeline-steps">
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio step-icon" aria-hidden="true"><path d="M16.247 7.761a6 6 0 0 1 0 8.478"/><path d="M19.075 4.933a10 10 0 0 1 0 14.134"/><path d="M4.925 19.067a10 10 0 0 1 0-14.134"/><path d="M7.753 16.239a6 6 0 0 1 0-8.478"/><circle cx="12" cy="12" r="2"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Telemetry Streaming</strong>
+                  <p>Stream real-time vehicle GPS telemetry from the ESP32 devices to Azure IoT Hub over MQTT/HTTPS.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation step-icon" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Map-Matching</strong>
+                  <p>Match each position to the assigned route to determine whether the bus is on its path.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert step-icon" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Deviation Detection</strong>
+                  <p>Raise an event when a bus leaves its route.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database step-icon" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg></div>
+                </div>
+                <div class="step-content">
+                  <strong>Event Logging</strong>
+                  <p>Log each deviation event to the database for monitoring and reporting.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="pipeline-card fade-in-section">
+            <div class="pipeline-card-header">
+              <span class="pipeline-number">04</span>
+              <h3>IoT-Integrated Driver Monitoring and Reporting</h3>
+              <p>Read onboard sensor data, detect unsafe driving behavior, alert drivers immediately, and deliver operational and safety dashboards for drivers and regulators.</p>
+            </div>
+            <div class="pipeline-steps">
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu step-icon" aria-hidden="true"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Sensor Data Collection</strong>
+                  <p>Read onboard IMU (gyro) sensor and GPS data on the IoT device.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity step-icon" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Behavior Detection</strong>
+                  <p>Detect over speeding and harsh maneuvers such as harsh acceleration and braking.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell step-icon" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                  <strong>Immediate Alerts</strong>
+                  <p>Send immediate alerts to the driver through the mobile app when unsafe behavior occurs.</p>
+                </div>
+              </div>
+              <div class="pipeline-step">
+                <div class="step-connector">
+                  <div class="step-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column step-icon" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></div>
+                </div>
+                <div class="step-content">
+                  <strong>Operational Reporting</strong>
+                  <p>Provide operational and safety dashboards for drivers and regulators through the mobile app and web portal.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="objectives-full">
+        <div class="eyebrow light"><span class="eyebrow-dot"></span> Research objectives</div>
+        <div class="objective-cards">
+            <article class="objective-card">
+              <span class="objective-num">01</span>
+              <div class="objective-body">
+                <h3>Verified Spatial Tracking</h3>
+                <p class="objective-sub">Bus Tracking, Route Violation Detection and Halt Detection</p>
+                <p class="objective-text">To develop an IoT telemetry subsystem that delivers bus position and speed to the backend in under 2 seconds, and to implement point-to-segment map-matching that flags a route deviation when a bus stays outside its route corridor for more than 30 seconds, with a detection accuracy above 90%. Verified kilometres and halt events are recorded as an audit trail for regulators.</p>
+              </div>
+            </article>
+            <article class="objective-card">
+              <span class="objective-num">02</span>
+              <div class="objective-body">
+                <h3>Fair Scheduling and Disruption Response</h3>
+                <p class="objective-sub">Policy-Driven Bus Scheduling and Time-Slot Management Engine</p>
+                <p class="objective-text">To implement a scheduling engine that generates a monthly base schedule from the route timetable with a fair share of trips for every active bus, no overlapping assignments, and a 15-minute turnaround. After an authority-approved disruption request, the engine reallocates each affected trip among the remaining buses, or cancels it with a stored reason when no feasible bus or driver exists.</p>
+              </div>
+            </article>
+            <article class="objective-card">
+              <span class="objective-num">03</span>
+              <div class="objective-body">
+                <h3>Distance-Based Revenue and Off-Peak Incentives</h3>
+                <p class="objective-sub">Distance-Based Revenue Management System</p>
+                <p class="objective-text">To build a revenue engine that calculates the monthly permit liability from verified kilometres and time-slot multipliers instead of a flat fee, and that deducts a night incentive for qualifying off-peak trips between 21:00 and 05:00. Every calculation must be exact and traceable to verified distance.</p>
+              </div>
+            </article>
+            <article class="objective-card">
+              <span class="objective-num">04</span>
+              <div class="objective-body">
+                <h3>Real-Time Driver Safety Feedback</h3>
+                <p class="objective-sub">Real-Time Driver Behavior Telematics and Stakeholder Portals</p>
+                <p class="objective-text">To deploy an IMU-based telematics module that classifies overspeeding, aggressive braking, aggressive turning, and abnormal slow movement with an accuracy above 90%, alerts the driver in the cab within 1.5 seconds, and presents the safety results to owners and the transport authority through the mobile application and the web portal.</p>
+              </div>
+            </article>
+          </div>
+      </div>
+
+      <a class="button button-light methodology-link" href="../index.html#milestones">Continue to project roadmap <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+    </section>
+  </main>
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
