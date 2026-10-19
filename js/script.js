@@ -87,6 +87,20 @@
     fullThesis.setAttribute('download', '');
   }
 
+  var individualThesis = Array.prototype.find.call(
+    document.querySelectorAll('.resource-row'),
+    function (row) {
+      var title = row.querySelector('strong');
+      return title && title.textContent.trim() === 'Thesis 4 - IoT-Integrated Driver Monitoring and Operational Reporting Mobile Application';
+    }
+  );
+  if (individualThesis) {
+    individualThesis.href = 'assets/documents/IT22925268_Individual_Thesis.pdf';
+    individualThesis.target = '_blank';
+    individualThesis.rel = 'noreferrer';
+    individualThesis.setAttribute('download', '');
+  }
+
   var checklistGroup = Array.prototype.find.call(
     document.querySelectorAll('.resource-group'),
     function (group) {
